@@ -8,7 +8,7 @@ from classes import Cephied, Cephied_Collection, PL_function
 
 class Analysis(object):
     def __init__(self):
-        filename = download_file('http://iopscience.iop.org/0004-637X/730/2/119/suppceph/apj383673t2_mrt.txt', cache = True)
+        filename = download_file('http://iopscience.iop.org/0004-637X/730/2/119/suppdata/apj383673t2_mrt.txt', cache = True)
         ceph = genfromtxt(filename, 
                        skip_header = 39, 
                         invalid_raise=False,
@@ -23,7 +23,7 @@ class Analysis(object):
         self.cephieds = ceph
 
 
-        filename = download_file('http://iopscience.iop.org/0004-637X/730/2/119/suppceph/apj383673t3_ascii.txt', cache = True)
+        filename = download_file('http://iopscience.iop.org/0004-637X/730/2/119/suppdata/apj383673t3_ascii.txt', cache = True)
         sne = genfromtxt(filename,
                           skip_header = 4,
                           invalid_raise = False,
@@ -44,3 +44,6 @@ class Analysis(object):
 def __main__():
     pl_func = PL_function()
     return pl_func()
+
+
+
