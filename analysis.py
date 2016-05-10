@@ -4,7 +4,7 @@ from astropy.utils.data import Conf
 Conf.remote_timeout = 10
 import warnings
 warnings.filterwarnings('ignore')
-from classes import Cephied, Cephied_Collection, PL_function
+from classes import Cepheid, Cephied_Collection, PL_function
 
 class Analysis(object):
     def __init__(self):
